@@ -5,5 +5,5 @@ export const Container = styled.div`
     width: 70%;
     margin: 5% auto;
     border-radius: 5px;
-    padding: 2%;
+    padding: 2% 5%;
 `
