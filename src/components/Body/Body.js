@@ -38,10 +38,18 @@ function Body() {
         <Cont3>
             <Button sx={{
                 color: 'black'
-            }}><ArrowBackIcon /> Prev</Button>
+            }}
+            onClick = {() => { 
+                if(value > 1)
+                    setValue(value - 1);
+             }}><ArrowBackIcon /> Prev</Button>
             <Button sx={{
                 color: 'black'
-            }}>Next <ArrowForwardIcon /></Button>
+            }}
+            onClick = {() => { 
+                if(value < 3)
+                    setValue(value + 1);
+             }}>Next <ArrowForwardIcon /></Button>
         </Cont3>
     </Container>
   )

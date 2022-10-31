@@ -35,7 +35,7 @@ const marks = [
 
 function Slider(props) {
     return (
-      <Box sx={{ width: 600 }}>
+      <Box sx={{ width: '80%' }}>
         <StyledSlider
           aria-label="Restricted values"
           defaultValue={null}
@@ -49,6 +49,8 @@ function Slider(props) {
             if(props.value < 3)
             props.set(props.value + 1)
         }}
+          sx={{color: '#ddd',
+          height: 4,}}
         />
       </Box>
     );
