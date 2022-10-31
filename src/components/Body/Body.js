@@ -1,8 +1,10 @@
 import React from 'react'
 import Bar from '../Bar/Bar'
-import { Container, Cont, Div } from './Body.elements'
+import { Container, Cont, Cont2, Div } from './Body.elements'
+import { data } from './../../utils/data'
 
 function Body() {
+  const [value, setValue] = React.useState(1);
   return (
     <Container>
         <Cont>
@@ -23,6 +25,10 @@ function Body() {
                 HOPEFUL
             </Div>
         </Cont>
+        <Cont2>
+            <b>{value}</b>/20
+        </Cont2>
+        <Cont>{data[value - 1].ques}</Cont>
     </Container>
   )
 }
