@@ -25,7 +25,6 @@ export const Cont2 = styled.div`
 export const Cont3 = styled.div`
     display: flex;
     justify-content: space-between;
-    align-items: center;
     font-size: 1em;
     font-weight: 500;
 `
