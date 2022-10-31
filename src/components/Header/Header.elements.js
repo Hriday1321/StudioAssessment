@@ -8,4 +8,5 @@ export const H = styled.div`
     align-items: center;
     justify-content: center;
     height: 15vh;
+    background-color: white;
 `;
