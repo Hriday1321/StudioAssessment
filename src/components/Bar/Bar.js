@@ -1,4 +1,5 @@
 import React from 'react'
+import { Div, Div2 } from './Bar.elements'
 
 function Bar(props) {
   return (
