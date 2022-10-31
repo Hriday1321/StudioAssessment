@@ -1,8 +1,9 @@
 import React from 'react'
+import { Container } from './Body.elements'
 
 function Body() {
   return (
-    <div>Body</div>
+    <Container>Body</Container>
   )
 }
 
