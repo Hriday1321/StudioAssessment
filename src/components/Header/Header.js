@@ -1,8 +1,9 @@
 import React from 'react'
+import { H } from './Header.elements'
 
 function Header() {
   return (
-    <div>Header</div>
+    <H>ARE YOU DISILLUSIONED?</H>
   )
 }
 
