@@ -22,6 +22,14 @@ export const Cont2 = styled.div`
     margin: 5% 0;
 `
 
+export const Cont3 = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+    font-weight: 500;
+`
+
 export const Div = styled.div`
     width: 20%;
     color: black;

@@ -1,7 +1,11 @@
 import React from 'react'
 import Bar from '../Bar/Bar'
-import { Container, Cont, Cont2, Div } from './Body.elements'
+import { Container, Cont, Cont2, Cont3, Div } from './Body.elements'
 import { data } from './../../utils/data'
+import Slider from '../Slider/Slider';
+
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 function Body() {
   const [value, setValue] = React.useState(1);
@@ -9,7 +13,7 @@ function Body() {
     <Container>
         <Cont>
             <Div>
-                <Bar value='20'/>
+                <Bar value={20 * value}/>
                 IDEALISTIC
             </Div>
             <Div>
@@ -29,6 +33,11 @@ function Body() {
             <b>{value}</b>/20
         </Cont2>
         <Cont>{data[value - 1].ques}</Cont>
+        <Cont><Slider value = {value} set = {setValue}/></Cont>
+        <Cont3>
+            <div><ArrowBackIcon /> Prev</div>
+            <div><ArrowForwardIcon /> Next</div>
+        </Cont3>
     </Container>
   )
 }
