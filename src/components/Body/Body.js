@@ -1,6 +1,6 @@
 import React from 'react'
 import Bar from '../Bar/Bar'
-import { Container, Cont, Cont2, Cont3, Div} from './Body.elements'
+import { Container, Cont, Cont2, Cont3, ContQ, ContS, Div} from './Body.elements'
 import { data } from './../../utils/data'
 import Slider from '../Slider/Slider';
 
@@ -33,8 +33,8 @@ function Body() {
         <Cont2>
             <b>{value}</b>/20
         </Cont2>
-        <Cont>{data[value - 1].ques}</Cont>
-        <Cont><Slider value = {value} set = {setValue}/></Cont>
+        <ContQ>{data[value - 1].ques}</ContQ>
+        <ContS><Slider value = {value} set = {setValue}/></ContS>
         <Cont3>
             <Button sx={{
                 color: 'black'

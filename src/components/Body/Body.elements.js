@@ -14,6 +14,20 @@ export const Cont = styled.div`
     font-size: 1.5em;
 `
 
+export const ContQ = styled.div`
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    margin-bottom: 10%;
+`
+
+export const ContS = styled.div`
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    margin-bottom: 5%;
+`
+
 export const Cont2 = styled.div`
     display: flex;
     justify-content: center;
